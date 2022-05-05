@@ -23,3 +23,4 @@ Route::get('/warga/create',[WargaController::class,'create']);
 Route::post('/warga/store',[WargaController::class,'store']);
 Route::get('/warga/{id}/edit',[WargaController::class,'edit']);
 Route::put('/warga/{id}',[WargaController::class,'update']);
+Route::delete('/warga/{id}',[WargaController::class,'destroy']);

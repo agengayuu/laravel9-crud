@@ -37,4 +37,11 @@ class WargaController extends Controller
         $warga->update($request->except(['_token','submit']));
         return redirect('/warga');
     }
+
+    public function destroy($id)
+    {
+        $warga = Warga::find($id);
+        $warga->delete();
+        return redirect('/warga');
+    }
 }
